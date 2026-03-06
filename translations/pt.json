@@ -1,0 +1,77 @@
+{
+  "api_key_missing": {
+    "message": "API Key ausente"
+  },
+  "api_key_desc": {
+    "message": "Configure sua API Key do TMDB nas preferências da extensão"
+  },
+  "no_results": {
+    "message": "Nenhum resultado para '{query}'"
+  },
+  "continue_typing": {
+    "message": "Continue digitando..."
+  },
+  "offline": {
+    "message": "Você está offline"
+  },
+  "check_connection": {
+    "message": "Verifique sua conexão com a internet"
+  },
+  "suggestion_title": {
+    "message": "Sugestão de Filme"
+  },
+  "suggestion_header": {
+    "message": "Aqui vai uma sugestão:"
+  },
+  "suggestion_header_genre": {
+    "message": "Aqui vai uma sugestão de {genre}:"
+  },
+  "suggestion_instructions": {
+    "message": "Deixe o destino decidir digitando 'random' ou 'aleatório' 🎲\n\nOu filtre por gênero:\nação, aventura, animação, comédia, crime, documentário,\ndrama, ficção, romance, suspense, terror"
+  },
+  "cast": {
+    "message": "Elenco"
+  },
+  "available_on": {
+    "message": "Disponível em"
+  },
+  "trending": {
+    "message": "em alta"
+  },
+  "random_synonyms": {
+    "message": "aleatorio,random,aleatório"
+  },
+  "genre_action": {
+    "message": "ação"
+  },
+  "genre_adventure": {
+    "message": "aventura"
+  },
+  "genre_animation": {
+    "message": "animação"
+  },
+  "genre_comedy": {
+    "message": "comédia"
+  },
+  "genre_crime": {
+    "message": "crime"
+  },
+  "genre_documentary": {
+    "message": "documentário"
+  },
+  "genre_drama": {
+    "message": "drama"
+  },
+  "genre_science": {
+    "message": "ficção"
+  },
+  "genre_romance": {
+    "message": "romance"
+  },
+  "genre_thriller": {
+    "message": "suspense"
+  },
+  "genre_horror": {
+    "message": "terror"
+  }
+}

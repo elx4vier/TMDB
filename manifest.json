@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "required_api_version": "^2.0.0",
+  "name": "TMDB",
+  "description": "Lightning fast movie search",
+  "developer_name": "Xavier",
+  "icon": "images/icon.png",
+
+  "options": {
+    "query_debounce": 0.1
+  },
+
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "TMDB",
+      "default_value": "m",
+      "description": "Lightning fast movie search"
+    },
+    {
+      "id": "suggest_kw",
+      "type": "text",
+      "name": "Movie suggestion",
+      "default_value": "sugest",
+      "description": "Keyword used to trigger movie suggestions"
+    },
+    {
+      "id": "api_key",
+      "type": "text",
+      "name": "TMDB API Key",
+      "default_value": "",
+      "description": "To get your key: 1. Create an account at https://www.themoviedb.org | 2. Go to Settings > API | 3. Generate a personal 'API Key' and paste it here."
+    }
+  ]
+}
