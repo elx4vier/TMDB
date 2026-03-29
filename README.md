@@ -1,4 +1,4 @@
-# 🎬 TMDB Movie Search for Ulauncher
+# 🎬 TMDB Movie Search
 
 A high-performance extension for Ulauncher that allows you to browse, search, and discover movies using The Movie Database (TMDB) API.
 
