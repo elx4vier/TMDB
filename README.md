@@ -33,8 +33,8 @@ To use this extension, you must provide your own TMDB API Key:
 |--------------------------|--------|
 | `m <query>`              | Search for a specific movie title |
 | `m` (no query)           | Show currently trending movies |
-| `sugest random`          | Get a completely random movie suggestion (minimum 70 min runtime) |
-| `sugest <genre>`         | Get a suggestion from a specific genre (e.g. `sugest drama`, `sugest horror`) |
+| `m sugest random`          | Get a completely random movie suggestion (minimum 70 min runtime) |
+| `m sugest <genre>`         | Get a suggestion from a specific genre (e.g. `sugest drama`, `sugest horror`) |
 
 **Supported Genres:** Action, Adventure, Animation, Comedy, Crime, Documentary, Drama, Science Fiction, Romance, Thriller, and Horror.
 
