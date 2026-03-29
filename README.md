@@ -1,56 +1,81 @@
 # 🎬 TMDB Movie Search for Ulauncher
 
-Uma extensão de alto desempenho para o Ulauncher que permite navegar, pesquisar e descobrir filmes usando a API do The Movie Database (TMDB).
+A high-performance extension for Ulauncher that allows you to browse, search, and discover movies using The Movie Database (TMDB) API.
 
-## ✨ Recursos
+## ✨ Features
 
-- **Pesquisa Instantânea**: Encontre qualquer filme enquanto você digita.
-- **Filmes em Alta**: Veja o que está em alta hoje acionando a extensão sem nenhuma consulta.
-- **Sugestões Inteligentes**: Receba recomendações aleatórias ou filtre por gênero.
-- **Informações Detalhadas**: Veja avaliações (⭐), duração, gêneros, elenco e diretor.
-- **Disponibilidade em Streaming**: Verifique onde assistir (Flatrate) de acordo com a sua região.
-- **Desempenho Otimizado**: Usa pool de workers para processamento de imagens e buscas em segundo plano, mantendo a interface fluida.
-- **Suporte Offline**: Acesse resultados previamente armazenados em cache mesmo sem internet.
+- **Lightning Fast Search**: Find any movie instantly as you type.
+- **Trending Movies**: See what's popular right now by triggering the extension with no query.
+- **Smart Suggestions**: Get random movie recommendations or filter them by genre.
+- **Detailed Insights**: View ratings (⭐), runtime, genres, cast, and director.
+- **Streaming Availability**: Check where to watch movies (Flatrate) based on your region.
+- **Offline Support**: Access previously cached results even without an internet connection.
 
-## 🚀 Instalação
+## 🚀 Installation
 
-1. Abra as Preferências do Ulauncher.
-2. Vá em **Extensions > Add extension**.
-3. Cole a URL do repositório:  
-   `https://github.com/your-username/ulauncher-tmdb`
+1. Open Ulauncher Preferences.
+2. Go to **Extensions > Add extension**.
+3. Paste the repository URL:  
+   `https://github.com/elx4vier/TMDB`
 
-## 🔑 Configuração
+## 🔑 Configuration
 
-Para usar esta extensão, você precisa fornecer sua própria chave da API do TMDB:
+To use this extension, you must provide your own TMDB API Key:
 
-1. Crie uma conta em [TheMovieDB.org](https://www.themoviedb.org/).
-2. Vá em **Settings > API**.
-3. Gere uma chave de API pessoal (v3 auth).
-4. Nas configurações da extensão no Ulauncher, cole sua chave no campo **TMDB API Key**.
+1. Create an account at [TheMovieDB.org](https://www.themoviedb.org/).
+2. Go to **Settings > API**.
+3. Generate a personal API Key (v3 auth).
+4. In the Ulauncher extension settings, paste your key into the **TMDB API Key** field.
 
-## 🛠️ Como Usar
+## 🛠️ Usage
 
-| Comando              | Ação |
-|----------------------|------|
-| `m <consulta>`       | Pesquisar um filme específico |
-| `m` (sem consulta)   | Mostrar filmes em alta no momento |
-| `sugest random`      | Sugerir um filme completamente aleatório (duração mínima de 70 minutos) |
-| `sugest <gênero>`    | Sugerir um filme de um gênero específico (ex: `sugest drama`, `sugest horror`) |
+| Command                  | Action |
+|--------------------------|--------|
+| `m <query>`              | Search for a specific movie title |
+| `m` (no query)           | Show currently trending movies |
+| `sugest random`          | Get a completely random movie suggestion (minimum 70 min runtime) |
+| `sugest <genre>`         | Get a suggestion from a specific genre (e.g. `sugest drama`, `sugest horror`) |
 
-**Gêneros suportados:** Action, Adventure, Animation, Comedy, Crime, Documentary, Drama, Science Fiction, Romance, Thriller e Horror.
+**Supported Genres:** Action, Adventure, Animation, Comedy, Crime, Documentary, Drama, Science Fiction, Romance, Thriller, and Horror.
 
-## ⚙️ Detalhes Técnicos
+## ⚙️ How to Customize Trigger Keywords
 
-- **Debounce**: 0.1s para otimizar chamadas à API.
-- **Processamento de Imagens**: Baixa posters, redimensiona para 120x180 e aplica cantos arredondados.
-- **Confiança nos Dados**: Escapamento profundo de HTML para evitar artefatos como `&amp;`.
-- **Cache**: Armazena detalhes de filmes e posters localmente para maior velocidade e menor uso de dados.
+You can easily change the default trigger keywords (`m` and `sugest`) to whatever you prefer:
 
-## 👤 Créditos
+1. Open Ulauncher Preferences.
+2. Go to the **TMDB Movie Search** extension settings.
+3. Find the following fields:
+   - **TMDB Keyword** (default: `m`)
+   - **Movie Suggestion** (default: `sugest`)
+4. Change them to your preferred keywords (e.g. `movie`, `film`, `rec`, `suggest`, etc.).
+5. Save the settings.
 
-- **Desenvolvedor**: Xavier
-- **Provedor de Dados**: The Movie Database (TMDB)
+**Examples after customization:**
+- `movie inception`
+- `film` (to see trending)
+- `rec random`
+- `rec horror`
 
----
+> **Tip**: Choose short and easy-to-type triggers for the best experience.
 
-**Quer que eu adicione uma seção sobre como personalizar as palavras-chave de ativação padrão?**
+## ⚙️ Technical Details
+
+- **Debounce**: 0.1s query debounce to optimize API calls.
+- **Image Processing**: Automatically fetches posters, resizes them to 120x180, and applies rounded corners for a native look.
+- **Data Reliability**: Implements deep HTML unescaping to ensure titles and descriptions are displayed correctly.
+- **Caching**: Stores movie details and posters locally to reduce data usage and improve speed.
+
+## 🌐 Available Translations
+
+This extension supports the following languages:
+
+- **English**
+- **Español** (Spanish)
+- **Deutsch** (German)
+- **Português** (Portuguese)
+- **Русский** (Russian)
+- **Français** (French)
+
+## 👤 Credits
+
+- **Data Provider**: The Movie Database (TMDB)
