@@ -2,6 +2,8 @@
 
 A high-performance extension for Ulauncher that allows you to browse, search, and discover movies using The Movie Database (TMDB) API.
 
+![demo gif](images/TMDB.gif)
+
 ## ✨ Features
 
 - **Lightning Fast Search**: Find any movie instantly as you type.
